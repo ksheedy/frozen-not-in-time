@@ -3,7 +3,7 @@ html {
 }
 
 header {
-  background-image: repeating-linear-gradient(-45deg, #c9fcff, #c9fcff .5%, #d4fdff .5%, #d4fdff 1%);
+  background-image: repeating-linear-gradient(-45deg, #c9fcff, #c9fcff 1%, #d4fdff 1%, #d4fdff 2%);
   border-top: 5px solid #b3fbff;
   border-bottom: 5px solid #b3fbff;
   position: relative;
@@ -16,6 +16,7 @@ header {
   position: absolute;
   left: 40px;
   top: 80px;
+  animation: fade-in 1s ease forwards;
 }
 
 .tagline {
@@ -25,6 +26,7 @@ header {
   left: 55px;
   top: 180px;
   max-width: 19em;
+  animation: fade-in 1s ease forwards;
 }
 
 .title, .tagline {
@@ -37,11 +39,26 @@ header {
   position: absolute;
   left: 55px;
   top: 310px;
+  animation: fade-in 1s ease forwards;
 }
 
 .btn-ghost:hover {
   border: 3px solid #990073;
   color: #c09;
+}
+
+@keyframes fade-in {
+
+  0% {
+    filter: blur(14px);
+    opacity: .4;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+
 }
 
 .cherry {
