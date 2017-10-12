@@ -100,6 +100,7 @@ header {
 }
 
 @keyframes i-scream {
+
   0% {
     transform: translateY(-1000px);
   }
